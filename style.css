@@ -1,0 +1,192 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe); /* Beautiful gradient background */
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Logo and Header Styles */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent blue background */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Main content section */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section for top news websites */
+#top-news-websites {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#top-news-websites h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #007BFF;
+}
+
+#top-news-websites ul {
+    list-style-type: none;
+}
+
+#top-news-websites li {
+    margin-bottom: 10px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect on list items */
+#top-news-websites li:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    background: linear-gradient(90deg, #ff8c00, #ffd700); /* Colorful background */
+    color: white; /* Change text color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Colorful hover effect for the link text */
+#top-news-websites a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#top-news-websites a:hover {
+    color: #ff6f00; /* Change link color on hover */
+    text-decoration: underline;
+    transform: translateX(5px); /* Add a small slide effect */
+}
+
+/* Section for writing the article */
+#write-article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#write-article h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #28a745;
+}
+
+/* Styled textarea */
+#article-text {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    resize: vertical;
+    min-height: 250px;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Styled Buttons */
+button {
+    background: linear-gradient(to right, #4CAF50, #45a049); /* Green gradient */
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: linear-gradient(to right, #45a049, #4CAF50);
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+button:active {
+    transform: scale(1); /* Return to normal size when button is clicked */
+}
+
+/* Timer section styles */
+#timer {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff4d4d;
+}
+
+/* Footer section styles */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    #top-news-websites, #write-article {
+        padding: 15px;
+    }
+
+    #article-text {
+        min-height: 150px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #timer {
+        font-size: 1.2rem;
+    }
+}
